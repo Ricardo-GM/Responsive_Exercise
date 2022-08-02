@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    height: 100%;
+}
+
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F3D3E;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    color: #F1F1F1;
+}
+
+.hijos {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #100F0F;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.principal {
+    display: flex;
+    background-color: #100F0F;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #F1F1F1;
+}
+
+@media (max-width: 640px) {
+
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+
+    .barra-lateral {
+        flex-direction: row;
+    }
+}
